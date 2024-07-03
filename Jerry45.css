@@ -1,0 +1,141 @@
+body {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+#header {
+  display: flex;
+  gap: 10px;
+}
+#image_box {
+  width: 15rem;
+  height: 20rem;
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 10px;
+  justify-content: center;
+}
+#image_box img {
+  border-radius: 10px;
+}
+#description {
+  display: block;
+  margin-top: 5rem;
+}
+#time_area {
+  margin-left: 10%;
+  display: flex;
+  gap: 10px;
+}
+#timecover {
+  width: 10rem;
+  height: 3rem;
+  border: 5px solid green;
+  border-radius: 10px;
+}
+#currentTimeUTC {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+  height: 3rem;
+  width: 10rem;
+}
+#day_area {
+  display: flex;
+}
+
+.goals_area {
+  position: relative;
+  width: 100%;
+}
+
+.text {
+  font-size: large;
+  width: 80%;
+  height: 80%;
+}
+footer {
+  margin-top: 10px;
+  background-color: rgb(97, 57, 19);
+  color: white;
+  width: 100%;
+}
+#Email {
+  background-color: black;
+  border-radius: 10px;
+  margin: auto;
+  width: 15rem;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#links {
+  display: block;
+  text-align: center;
+}
+
+#links a {
+  font-size: large;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+#Email p {
+  color: white;
+}
+
+/**MEDIA QUERRIES **/
+/**tablet **/
+@media (min-width: 601px) and (max-width: 1024px) {
+  #header {
+    gap: 0;
+  }
+  #description {
+    margin-top: 5rem;
+  }
+  #time_area {
+    margin-left: 5%;
+  }
+  #image_box {
+    margin-bottom: 0;
+  }
+  .goals_area {
+    width: 92%;
+  }
+  footer {
+    width: 92%;
+  }
+}
+
+/**mobile **/
+@media (max-width: 600px) {
+  #header {
+    display: block;
+    gap: 0;
+  }
+  #time_area {
+    display: block;
+    margin-left: 0;
+    font-size: medium;
+  }
+  .goals_area {
+    margin: 0;
+  }
+  .text {
+    font-size: small;
+  }
+
+  #image {
+    width: 90%;
+    height: 25rem;
+    border-radius: 10px;
+  }
+  footer {
+    margin-top: 10px;
+    width: 90%;
+  }
+}
